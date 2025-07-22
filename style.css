@@ -1052,3 +1052,45 @@ body {
         animation: none;
     }
 }
+.logo img {
+    height: 30px; 
+    width: auto;  
+    vertical-align: middle; 
+    margin-right: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.developer-avatar {
+  /* Define the size of the avatar */
+  width: 120px;
+  height: 120px;
+  
+  /* This is the key to making it round */
+  border-radius: 50%;
+  
+  /* Hides the parts of the image outside the circle */
+  overflow: hidden;
+  
+  /* Optional: adds a subtle border */
+  border: 3px solid #fff;
+  
+  /* Optional: adds a shadow for depth */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  
+  /* Ensures the div doesn't shrink if in a flex container */
+  flex-shrink: 0; 
+}
+
+.developer-avatar img {
+  /* Makes the image fill the container */
+  width: 100%;
+  height: 100%;
+  
+  /* Ensures the image covers the area without being stretched */
+  object-fit: cover;
+}
